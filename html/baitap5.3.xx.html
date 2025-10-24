@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIT-HCMUE Shop - Trang chủ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    header {
+      background-color: #1976d2;
+      color: white;
+      padding: 12px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .search-bar {
+      text-align: right;
+      background: #e3f2fd;
+      padding: 10px 30px;
+    }
+
+    .search-bar input {
+      padding: 6px 10px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .search-bar button {
+      padding: 6px 12px;
+      border: none;
+      background: #1976d2;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background: #1565c0;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0 20px;
+      color: #0d47a1;
+      font-size: 28px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
+      width: 90%;
+      margin: 0 auto 50px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      border-bottom: 1px solid #eee;
+    }
+
+    .card h3 {
+      margin: 15px 0 5px;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .card a {
+      display: inline-block;
+      background-color: #1976d2;
+      color: white;
+      padding: 8px 16px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .card a:hover {
+      background-color: #0d47a1;
+    }
+
+    footer {
+      background-color: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>FIT-HCMUE Shop</h1>
+    <nav>
+      <a href="#">Trang chủ</a>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Sản phẩm</a>
+      <a href="#">Liên hệ</a>
+      <a href="#">Hỏi đáp</a>
+      <a href="#">Tài khoản</a>
+    </nav>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Tìm sản phẩm...">
+    <button>Tìm</button>
+  </div>
+
+  <h2>Các dòng iPhone mới nhất</h2>
+
+  <div class="container">
+    <div class="card">
+      <img
+        src="https://i5.walmartimages.com/asr/cb8f75e5-1b8e-4c06-9776-0d995a314ada.88ab53492f6fe7e653033585616419b1.jpeg"
+        alt="iPhone 14 Pro Max">
+      <h3>iPhone 14 ProMax - 256GB</h3>
+      <p>27.990.000 ₫</p>
+      <a href="chitiet.html?id=ip14">Xem chi tiết</a>
+    </div>
+
+    <div class="card">
+      <img src="https://tecexpresshn.com/wp-content/uploads/2023/12/6525496_sd.jpg" alt="iPhone 15 ProMax">
+      <h3>iPhone 15 ProMax - 256GB</h3>
+      <p>26.490.000 ₫</p>
+      <a href="chitiet.html?id=ip15pro">Xem chi tiết</a>
+    </div>
+
+    <div class="card">
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525390_sd.jpg"
+        alt="iPhone 15 Plus">
+      <h3>iPhone 15 Plus - 128GB</h3>
+      <p>26.990.000 ₫</p>
+      <a href="chitiet.html?id=ip15plus">Xem chi tiết</a>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://taoxinh.vn/wp-content/uploads/2024/11/iphone-16-thuong-vs-iphone-16-plus-128gb-256gb-512gb-mau-hong.jpg"
+        alt="iPhone 16">
+      <h3>iPhone 16 - 128GB</h3>
+      <p>20.550.000 ₫</p>
+      <a href="chitiet.html?id=ip16">Xem chi tiết</a>
+    </div>
+
+    <div class="card">
+      <img src="https://static.iphoned.nl/orca/products/23029/apple-iphone-16-pro.png" alt="iPhone 16 Pro">
+      <h3>iPhone 16 Pro - 128GB</h3>
+      <p>25.490.000 ₫</p>
+      <a href="chitiet.html?id=ip16pro">Xem chi tiết</a>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-17-pro-256-gb.png"
+        alt="iPhone 17 Ultra">
+      <h3>iPhone 17 Pro Max - 1TB</h3>
+      <p>50.990.000 ₫</p>
+      <a href="chitiet.html?id=ip17promax">Xem chi tiết</a>
+    </div>
+  </div>
+
+  <footer>
+    FIT-HCMUE Shop
+  </footer>
+</body>
+
+</html>

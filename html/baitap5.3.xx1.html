@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm - FIT-HCMUE Shop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f7fa;
+        }
+
+        header {
+            background-color: #1976d2;
+            color: white;
+            padding: 12px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            margin: 30px auto;
+            gap: 25px;
+            align-items: flex-start;
+        }
+
+        .product-detail {
+            flex: 3;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .product-header img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-info h2 {
+            margin: 0;
+            color: #0d47a1;
+            font-size: 26px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #c62828;
+            margin: 10px 0 20px;
+        }
+
+        .buttons button {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            margin-right: 10px;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #0d47a1;
+        }
+
+        .info {
+            margin-top: 25px;
+        }
+
+        .info h3 {
+            color: #1976d2;
+            border-left: 4px solid #1976d2;
+            padding-left: 8px;
+        }
+
+        .info p {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .share {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+
+        .share p {
+            margin-bottom: 10px;
+        }
+
+        .share img {
+            width: 28px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .share img:hover {
+            transform: scale(1.1);
+        }
+
+        .sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card h3 {
+            background-color: #1976d2;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .card-content {
+            padding: 12px 15px;
+        }
+
+        .cart img {
+            width: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .search input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .categories li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .categories a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .categories a:hover {
+            color: #1976d2;
+        }
+
+        footer {
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>FIT-HCMUE Shop</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Hỏi đáp</a>
+            <a href="#">Tài khoản</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-header">
+                <img id="product-img"
+                    src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-17-pro-256-gb.png"
+                    alt="iPhone 17 Ultra">
+                <div class="product-info">
+                    <h2 id="product-name">iPhone 17 Pro Max - 256GB</h2>
+                    <p class="price" id="product-price">37.990.000 ₫</p>
+                    <div class="buttons">
+                        <button>🛒 Thêm vào giỏ</button>
+                        <button>❤️ Yêu thích</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info" id="product-info">
+                <h3>Thông tin sản phẩm</h3>
+                <p><b>Màu sắc:</b> Cam Vũ Trụ</p>
+                <p><b>Màn hình:</b> Super Retina XDR, OLED 6.9 inch</p>
+                <p><b>Độ phân giải:</b> 2868x1320 pixel (460 ppi)</p>
+                <p><b>Camera:</b> 48MP Pro Fusion</p>
+                <p><b>Chip:</b> A19 Pro</p>
+                <p><b>Face ID:</b> TrueDepth Center Stage</p>
+                <p><b>Hệ điều hành:</b> iOS 26</p>
+            </div>
+
+            <div class="share">
+                <p>Chia sẻ sản phẩm:</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Twitter">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="card cart">
+                <h3>🛒 Giỏ hàng</h3>
+                <div class="card-content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Cart">
+
+                </div>
+            </div>
+
+            <div class="card search">
+                <h3>🔍 Tìm kiếm</h3>
+                <div class="card-content">
+                    <input type="text" placeholder="Tìm sản phẩm...">
+                </div>
+            </div>
+
+            <div class="card categories">
+                <h3>📂 Chủng loại</h3>
+                <div class="card-content">
+                    <ul>
+                        <li><a href="#">Điện thoại</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Tablet</a></li>
+                        <li><a href="#">Điều hòa</a></li>
+                        <li><a href="#">Tivi</a></li>
+                        <li><a href="#">Tủ lạnh</a></li>
+                        <li><a href="#">Điện gia dụng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        FIT-HCMUE Shop
+    </footer>
+
+    <script>
+        const products = {
+            ip14: {
+                name: "iPhone 14 Pro Max - 256GB",
+                price: "27.990.000 ₫",
+                img: "https://i5.walmartimages.com/asr/cb8f75e5-1b8e-4c06-9776-0d995a314ada.88ab53492f6fe7e653033585616419b1.jpeg",
+                info: `
+          <p><b>Màu sắc:</b> Tím</p>
+          <p><b>Màn hình:</b> Super Retina XDR, 6.7 inch</p>
+          <p><b>Chip:</b> A16 Bionic</p>
+          <p><b>Camera:</b> Camera chính: 48 MP, f/1.8, 24mm, OIS <br> Camera góc siêu rộng: 12 MP, f/2.2, 13mm, 120˚ <br>Camera tele: 12 MP, f/2.8, 77mm, OIS, 3x optical zoom</p>
+          <p><b>Hệ điều hành:</b> iOS 16</p>`
+            },
+            ip15pro: {
+                name: "iPhone 15 - 256GB",
+                price: "26.490.000 ₫",
+                img: "https://tecexpresshn.com/wp-content/uploads/2023/12/6525496_sd.jpg",
+                info: `
+          <p><b>Màu sắc:</b> Titan Xám</p>
+          <p><b>Màn hình:</b> Super Retina XDR OLED 6.7 inch</p>
+          <p><b>Chip:</b> A17 Pro</p>
+          <p><b>Camera:</b> Camera chính: 48MP, 24 mm, ƒ/1.78 <br>Camera góc siêu rộng: 12 MP, 13 mm, ƒ/2.2 <br>Camera Tele: 12 MP</p>
+          <p><b>Hệ điều hành:</b> iOS 17</p>`
+            },
+            ip15plus: {
+                name: "iPhone 15 Plus  - 128GB",
+                price: "26.990.000 ₫",
+                img: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525390_sd.jpg",
+                info: `
+          <p><b>Màu sắc:</b> Tím</p>
+          <p><b>Màn hình:</b> Super Retina XDR OLED</p>
+          <p><b>Chip:</b> Apple A17 Pro 6 nhân</p>
+          <p><b>Camera:</b> Camera chính: 48MP, 24 mm, ƒ/1.78 <br>Camera góc siêu rộng: 12 MP, 13 mm, ƒ/2.2 <br>Camera Tele: 12 MP</p>
+          <p><b>Hệ điều hành:</b> iOS 17</p>`
+            },
+            ip16pro: {
+                name: "iPhone 16 Pro - 128GB",
+                price: "25.490.000 ₫",
+                img: "https://static.iphoned.nl/orca/products/23029/apple-iphone-16-pro.png",
+                info: `
+          <p><b>Màu sắc:</b> Titan Sa Mạc</p>
+          <p><b>Màn hình:</b> Super Retina XDR OLED 6.3 inch</p>
+          <p><b>Chip:</b> Apple A18 Pro</p>
+          <p><b>Camera:</b> Camera chính: 48MP, f/1.78, 24mm, chống rung quang học dịch chuyển cảm biến thế hệ thứ hai, Focus Pixels 100%, hỗ trợ ảnh có độ phân giải siêu cao <br>Hỗ trợ Telephoto 2x 12MP: 52 mm, ƒ/1.6<br>Camera góc siêu rộng: 48MP, 13 mm, ƒ/2.2 và trường ảnh 120°, H</p>
+          <p><b>Hệ điều hành:</b> iOS 18</p>`
+            },
+            ip16: {
+                name: "iPhone 16 - 128GB",
+                price: "20.550.000 ₫",
+                img: "https://taoxinh.vn/wp-content/uploads/2024/11/iphone-16-thuong-vs-iphone-16-plus-128gb-256gb-512gb-mau-hong.jpg",
+                info: `
+          <p><b>Màu sắc:</b> Hồng</p>
+          <p><b>Màn hình:</b> Super Retina XDR OLED 6.1 inch</p>
+          <p><b>Chip:</b> Apple A18</p>
+          <p><b>Camera:</b> Camera chính: 48MP, f/1.6, 26mm, Focus Pixels 100%, hỗ trợ ảnh có độ phân giải siêu cao<br> Camera góc siêu rộng: 12MP, ƒ/2.2, 13 mm, Focus Pixels 100%, Độ phóng đại quang học 2x, độ thu nhỏ quang học 2x; phạm vi thu phóng quang học 4x Độ thu phóng kỹ thu</p>
+          <p><b>Hệ điều hành:</b> iOS 18</p>`
+            },
+            ip17promax: {
+                name: "iPhone 17 Pro Max - 1T",
+                price: "50.990.000 ₫",
+                img: "https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-17-pro-256-gb.png",
+                info: `
+          <p><b>Màu sắc:</b> Cam Vũ Trụ</p>
+          <p><b>Màn hình:</b> Super Retina XDR, OLED 6.9 inch</p>
+          <p><b>Chip:</b> A19 Pro</p>
+          <p><b>Camera:</b>3 camera Fusion: Chính 48MP + Siêu rộng 12MP + Tele 48MP (zoom chất lượng quang học 8x)</p>
+          <p><b>Hệ điều hành:</b> iOS 26</p>`
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+
+        if (id && products[id]) {
+            const p = products[id];
+            document.getElementById("product-name").innerText = p.name;
+            document.getElementById("product-price").innerText = p.price;
+            document.getElementById("product-img").src = p.img;
+            document.getElementById("product-info").innerHTML = `<h3>Thông tin sản phẩm</h3>${p.info}`;
+        }
+    </script>
+</body>
+
+</html>

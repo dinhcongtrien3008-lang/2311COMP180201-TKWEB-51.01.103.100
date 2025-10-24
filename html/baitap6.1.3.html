@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: sans-serif;
+        }
+
+        body {
+
+            background:
+
+                rgb(43, 122, 226);
+
+            display: flex;
+
+            justify-content:
+
+                center;
+
+            align-items:
+
+                center;
+
+            min-height: 100vh;
+
+
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+
+            min-width: 1000px;
+
+            min-height: 1000px;
+
+            background: #fff;
+
+            margin: 50px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 2fr;
+
+            box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .container .left {
+
+            position:
+
+                relative;
+
+            background:
+
+                #bbcb3c;
+
+            padding:
+
+                40px;
+
+        }
+
+        .container .right {
+            position: relative;
+
+            background: #fff;
+
+            padding: 40px;
+
+        }
+
+        .profileText {
+
+            position: relative;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            padding: 20px;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+
+        }
+
+        .profileText.profileImg {
+
+            position: relative;
+
+            width: 200px;
+
+            height: 200px;
+
+            border-radius: 50%;
+
+            overflow: hidden;
+        }
+
+        .profileText.profileImg img {
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height:
+
+                100%;
+            object-fit: cover;
+
+        }
+
+        .profileText h2 {
+
+            color: #fff;
+
+            font-size: 1.5em;
+
+            margin-top: 20px;
+
+            text-transform: uppercase;
+
+            text-align: center;
+
+            font-weight:
+
+                600;
+
+            line-height: 1.4em;
+        }
+
+        .profileText h2 span {
+
+            font-size: 0.7em;
+
+            font-weight: 300;
+        }
+
+        .Info {
+            padding: 40px;
+        }
+
+        .title {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            margin-bottom: 20px;
+        }
+
+        .Info ul {
+            position: relative;
+        }
+
+        .Info ul li {
+
+            position: relative;
+
+            list-style: none;
+
+            margin:
+
+                10px 0;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+            <div class="profile-img" align="center"><img src="/html/apple.png" /></div>
+
+            <div class="profileText">
+
+
+
+                <h2>đinh công triển <br>
+
+            </div>
+            <div class="Info">
+
+                <h3 class="title">Sơ Lược về bản thân </h3>
+                <p>Tôi là một người có tổ chức và luôn tập trung vào việc tạo ra kết quả. Trong khi đặt ra mục tiêu tôi
+                    luôn rất thực tế, tôi luôn nỗ lực phát triển các cách để hoàn thành được công việc một cách hiệu quả
+                    và thậm chí thường đạt được nhiều hơn những gì tôi mong đợi.
+                </p>
+                <p>Thích giải quyết vấn đề, xử lý sự cố và đưa ra các giải pháp một cách kịp thời. Tôi phát triển mạnh
+                    trong kĩ năng tạo nhóm làm vệc, và tôi nghĩ rằng khả năng giao tiếp hiệu quả với người khác là điều
+                    thúc đẩy năng lực của tôi để giải quyết nhiều vấn đề.</p>
+
+
+            </div>
+
+
+            <div class="Info">
+
+                <h3 class="title">Liên hệ</h3>
+                <ul>
+                    <li><span class="icon"></span>
+
+                        <span class="text">Điện thoại: 0703852743</span>
+
+                    </li>
+
+                    <li>
+
+                        <span class="icon"></span>
+
+                        <span class="text">Email:dinhcongtrien3008@gmail.com</span>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <span class="icon"></span>
+
+                        <span class="text">Địa chỉ: 76/2 Ấp Vĩnh Bình Xã Vĩnh Công, Tỉnh Tây Ninh</span>
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class="Info education">
+
+                <h3 class="title">Kĩ năng</h3>
+
+                <ul>
+
+                    <li>
+
+                        <p>Quản lí dự án</p>
+
+                        <p>Giao tiếp tốt</p>
+
+                        <p>Quản lí thời gian</p>
+
+                    </li>
+
+                </ul>
+                <h3 class="title">Kĩ năng</h3>
+
+                <ul>
+
+                    <li>
+
+                        <h4>HTML</h4><br>
+
+                        <h4>Photoshop</h4><br>
+
+                        <h4>CSS</h4><br>
+
+                        <h4>Javascript</h4>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div>
+
+            <div class="Info">
+                <h2>ĐINH CÔNG TRIỂN </h2><br>
+                <P>SINH VIÊN KHOA CÔNG NGHỆ THÔNG TIN </P><br>
+                <h2>Giáo dục</h2>
+                <div>
+                    <ul>
+                        <li>
+
+                            <p>2013-2018: Tiểu Học Vĩnh Công </p>
+
+                        </li>
+
+                        <li>
+                            <p>2018-2022: Trung Học Cơ Sở Vĩnh Công </p>
+
+
+                        </li>
+
+                        <li>
+
+                            <p>2022-2025: Trung Học Phổ Thông Tân An </p>
+
+                        </li>
+
+                        <li>
+
+                            <p>2025-2029: Đại Học Sư Phạm Thành Phố Hồ Chí Minh </p>
+
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+    <div class="Info education">
+
+        <h2>Kinh nghiệm</h2>
+        <p>Tập trung vào kiến thức chuyên môn và tự học:
+            Nắm vững kiến thức trên giảng đường.
+            Chủ động tìm kiếm tài liệu, nghiên cứu khoa học, và tham gia các khóa học trực tuyến để bổ sung và
+            mở rộng kiến thức chuyên ngành.
+            Học ngoại ngữ để tăng cơ hội nghề nghiệp.
+        <p>Rèn luyện Kỹ năng mềm:
+            Làm việc nhóm: Phối hợp hiệu quả với đồng đội trong các dự án.
+            Giao tiếp và Thuyết trình: Tự tin và diễn đạt ý kiến rõ ràng.
+            Quản lý thời gian: Cân bằng giữa việc học, làm thêm, và các hoạt động khác.
+            Giải quyết vấn đề: Khả năng thích ứng và xử lý các tình huống bất ngờ.
+            Lắng nghe: Học hỏi từ góp ý của người đi trước.</p><br>
+        <p>Tích lũy kinh nghiệm thực tế:
+            Tham gia các Câu lạc bộ/Đội nhóm: Giúp phát triển kỹ năng lãnh đạo, làm việc nhóm, và mở rộng mối
+            quan hệ.
+            Hoạt động tình nguyện xã hội: Góp phần vào cộng đồng và học hỏi kỹ năng sống.</p>
+
+
+        <p>
+            Thực tập sớm: Tìm kiếm cơ hội thực tập, kể cả bán thời gian, ngay từ những năm đầu để hiểu rõ về
+            ngành nghề và môi dựng các mối quan hệ chuyên nghiệp.
+            Làm thêm (bán thời gian): Giúp rèn tính tự lập, va chạm thực tế, nhưng cần cân bằng để không ảnh
+            hưởng đến việc học.</p>
+
+
+    </div>
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

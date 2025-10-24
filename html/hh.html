@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quản Lý Sản Phẩm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: #fff;
+      width: 600px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .add-section {
+      margin-bottom: 20px;
+    }
+
+    .add-section input[type="text"] {
+      width: 70%;
+      padding: 5px;
+      border: 1px solid #aaa;
+      border-radius: 3px;
+    }
+
+    .add-section button {
+      padding: 6px 12px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .list-section table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .list-section th,
+    .list-section td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    .list-section th {
+      background-color: #f9f9f9;
+    }
+
+    .list-section td:nth-child(2),
+    .list-section td:nth-child(3) {
+      text-align: center;
+      width: 80px;
+    }
+
+    .btn {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .edit-btn {
+      background-color: #444;
+    }
+
+    .delete-btn {
+      background-color: #888;
+    }
+
+    .footer {
+      text-align: right;
+      margin-top: 10px;
+      color: #555;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="add-section">
+      <h2>Add New Product</h2>
+      <input type="text" placeholder="New Product">
+      <button>Add</button>
+    </div>
+
+    <div class="list-section">
+      <h2>Display All Product</h2>
+      <table>
+        <tr>
+          <th>Product Name</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Sony Xperia</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Samsung Galaxy</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Nokia 6</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Xiaomi Redmi Note 4</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Apple iPhone 6S</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Xiaomi Mi 5s Plus</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Apple iPhone 8 Plus</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Fujitsu F-04E</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Oppo A71</td>
+          <td><button class="btn edit-btn">Edit</button></td>
+          <td><button class="btn delete-btn">Delete</button></td>
+        </tr>
+      </table>
+
+      <div class="footer">9 products</div>
+    </div>
+  </div>
+
+</body>
+
+</html>

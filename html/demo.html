@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin-left: 5px;
+            background-color: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .actions button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add New Product</h2>
+        <input type="text" id="productInput" placeholder="New Product">
+        <button onclick="addProduct()">Add</button>
+
+        <h2>Display All Product</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th class="actions">Actions</th>
+                </tr>
+            </thead>
+
+            <body id="productTable">
+
+            </body>
+        </table>
+    </div>
+
+    <script>
+        let products = [
+            "1.Sony Xperia",
+            "2.Samsung Galaxy",
+            "3.Nokia 6",
+            "Xiaomi Redmi Note 4",
+            "Apple iPhone 6S",
+            "Xiaomi Mi 5s Plus",
+            "Apple iPhone 8 Plus",
+            "Fujitsu F-04E",
+            "Oppo A71"
+        ];
+
+        function displayProducts() {
+            const table = document.getElementById("productTable");
+            table.innerHTML = "";
+
+            products.forEach((product, index) => {
+                const row = document.createElement("tr");
+
+                const nameCell = document.createElement("td");
+                nameCell.textContent = product;
+
+                const actionCell = document.createElement("td");
+                actionCell.classList.add("actions");
+
+                const editBtn = document.createElement("button");
+                editBtn.textContent = "Edit";
+                editBtn.onclick = () => editProduct(index);
+
+                const deleteBtn = document.createElement("button");
+                deleteBtn.textContent = "Delete";
+                deleteBtn.onclick = () => deleteProduct(index);
+
+                actionCell.appendChild(editBtn);
+                actionCell.appendChild(deleteBtn);
+
+                row.appendChild(nameCell);
+                row.appendChild(actionCell);
+                table.appendChild(row);
+            });
+        }
+
+        function addProduct() {
+            const input = document.getElementById("productInput");
+            const name = input.value.trim();
+            if (name) {
+                products.push(name);
+                input.value = "";
+                displayProducts();
+            }
+        }
+
+        function deleteProduct(index) {
+            products.splice(index, 1);
+            displayProducts();
+        }
+
+        function editProduct(index) {
+            const newName = prompt("Edit product name:", products[index]);
+            if (newName !== null && newName.trim() !== "") {
+                product[index] = newName.trim();
+                displayProducts();
+            }
+        }
+    </script>
+</body>
+
+</html>

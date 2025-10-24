@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Đội Hình Quái Vật - Halloween Team</title>
+    <link rel="stylesheet" href="team_halloween_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* 1. Thiết lập chung */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000000;
+            /* Nền đen */
+            color: #f0f0f0;
+            /* Chữ trắng nhạt */
+            margin: 0;
+            padding: 30px;
+            line-height: 1.5;
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            /* Nền tối của khung chính */
+            padding: 40px;
+            border-radius: 15px;
+            border: 5px solid #800080;
+            /* Viền tím ma quái */
+            box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
+            /* Hiệu ứng phát sáng cam */
+        }
+
+        /* 2. Phần Tiêu đề */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 3px dashed #ff6600;
+            /* Viền cam đứt nét */
+        }
+
+        .halloween-title {
+            font-family: 'Creepster', cursive;
+            font-size: 3.5em;
+            color: #ff6600;
+            /* Cam nổi bật */
+            text-shadow: 4px 4px #800080;
+            /* Bóng tím */
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #cccccc;
+            font-size: 1.1em;
+        }
+
+        /* 3. Bố cục Thành viên */
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .member-card {
+            background-color: #2b2b2b;
+            border: 1px solid #ff6600;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(255, 102, 0, 0.5);
+            border-color: #ffcc00;
+            /* Sáng hơn khi hover */
+        }
+
+        /* 4. Chi tiết Thành viên */
+        .photo-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: #333;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            line-height: 120px;
+            font-style: italic;
+            color: #ff6600;
+            border: 3px solid #800080;
+        }
+
+        .member-name {
+            font-family: 'Creepster', cursive;
+            font-size: 2em;
+            color: #ffcc00;
+            /* Vàng bí ngô */
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .member-title {
+            color: #800080;
+            /* Tím */
+            font-weight: 700;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #444;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        .member-bio {
+            font-size: 1em;
+            color: #cccccc;
+            min-height: 75px;
+            /* Giúp các thẻ có chiều cao tương đương */
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ff6600;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        /* 5. Chân trang */
+        .team-quote {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px dashed #800080;
+        }
+
+        .team-quote p {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #ffcc00;
+        }
+
+        /* 6. Responsive cơ bản */
+        @media (max-width: 960px) {
+            .team-members {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="team-container">
+        <header>
+            <h1 class="halloween-title">👹 Đội Hình Quái Vật Vô Song 🦇</h1>
+            <p>Xin giới thiệu những thành viên rùng rợn nhất của chúng tôi, những người luôn "ám ảnh" công việc của
+                mình!</p>
+        </header>
+
+        <section class="team-members">
+
+            <div class="member-card">
+                <div class="photo-placeholder">[Hình ảnh Dracula]</div>
+                <h3 class="member-name">Bá Tước Dracula</h3>
+                <p class="member-title">Trưởng nhóm Ám Ảnh (Team Leader)</p>
+                <p class="member-bio">Người dẫn dắt đội ngũ từ bóng tối. Chuyên gia hút cạn deadline và truyền năng
+                    lượng ma quái cho mọi dự án.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">👻</a>
+                    <a href="#" class="social-icon">✉️</a>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="photo-placeholder">[Hình ảnh Zombie]</div>
+                <h3 class="member-name">Thây Ma Code (Code Zombie)</h3>
+                <p class="member-title">Lập trình viên Không Ngủ (Developer)</p>
+                <p class="member-bio">Luôn thức trắng đêm để viết code. Anh ta chỉ cần "não" (ý tưởng) và cà phê để hoàn
+                    thành mọi nhiệm vụ.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">🧠</a>
+                    <a href="#" class="social-icon">✉️</a>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="photo-placeholder">[Hình ảnh Phù Thủy]</div>
+                <h3 class="member-name">Phù Thủy Thiết Kế</h3>
+                <p class="member-title">Nghệ nhân Ma Thuật (Designer)</p>
+                <p class="member-bio">Sử dụng phép thuật và nồi lẩu màu sắc để tạo ra những thiết kế đẹp "chết người".
+                    Cảnh báo: cẩn thận với cái nhìn của cô ấy!</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">🔮</a>
+                    <a href="#" class="social-icon">✉️</a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="team-quote">
+            <p>"Chúng tôi không cần ánh sáng ban ngày. Chúng tôi làm việc tốt hơn trong bóng tối!"</p>
+        </footer>
+    </div>
+</body>
+
+</html>
