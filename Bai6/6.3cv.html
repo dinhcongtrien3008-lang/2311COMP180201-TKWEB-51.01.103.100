@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CV - Mẫu</title>
+    <style>
+        :root {
+            --dark: #333;
+            --muted: #784949;
+            --accent: #f4f4f4;
+            --primary: #222
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+            margin: 0;
+            background: #fff;
+            color: var(--primary)
+        }
+
+        .cv {
+            max-width: 900px;
+            margin: 28px auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            border: 1px solid #e6e6e6
+        }
+
+        /* left column */
+        .left {
+            background: var(--dark);
+            color: #fff;
+            padding: 32px
+        }
+
+        .photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 18px;
+            border: 6px solid rgba(255, 255, 255, 0.08)
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block
+        }
+
+        h1 {
+            font-size: 26px;
+            margin: 6px 0 0
+        }
+
+        h2.role {
+            font-weight: 600;
+            color: #dcdcdc;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin: 6px 0 18px
+        }
+
+        .section-title {
+            font-size: 13px;
+            color: #cfcfcf;
+            margin: 18px 0 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 8px
+        }
+
+        .muted {
+            color: #cfcfcf;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .info-row {
+            font-size: 14px;
+            margin: 8px 0
+        }
+
+        .skill-bar {
+            background: rgba(255, 255, 255, 0.08);
+            height: 8px;
+            border-radius: 6px;
+            overflow: hidden
+        }
+
+        .skill-fill {
+            height: 100%;
+            background: #fff
+        }
+
+        .left .list {
+            margin: 10px 0
+        }
+
+        /* right column */
+        .right {
+            padding: 36px 36px
+        }
+
+        .contact {
+            display: flex;
+            gap: 16px;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap
+        }
+
+        .contact .item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .heading-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        h3.section {
+            margin: 0 0 10px;
+            font-size: 16px
+        }
+
+        .timeline {
+            border-left: 2px solid #e6e6e6;
+            margin-left: 14px;
+            padding-left: 18px
+        }
+
+        .job {
+            position: relative;
+            padding: 12px 0
+        }
+
+        .job .meta {
+            font-weight: 700
+        }
+
+        .job p {
+            margin: 6px 0;
+            color: var(--muted);
+            line-height: 1.45
+        }
+
+        .year {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .edu-item {
+            padding: 12px 0;
+            border-bottom: 1px dashed #f0f0f0
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px
+        }
+
+        .skill-name {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: var(--muted)
+        }
+
+        /* responsive */
+        @media (max-width:800px) {
+            .cv {
+                grid-template-columns: 1fr;
+                max-width: 640px
+            }
+
+            .left {
+                padding: 22px
+            }
+
+            .right {
+                padding: 22px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv">
+        <aside class="left">
+            <div class="photo"><img src="https://demoda.vn/wp-content/uploads/2022/03/mau-anh-the-nam-nhan-vien.jpg"
+                    alt="ảnh" /></div>
+            <h1>Đinh Công Triển</h1>
+            <div class="role">GỌI TỔNG ĐÀI</div>
+            <div class="section-title">GIỚI THIỆU</div>
+            <div class="muted">Tôi là một sinh viên năm thứ nhất chuyên ngành Sư phạm Tin tại trường Đại học Sư Phạm
+                Thành phố Hồ Chí Minh.<br>
+                Tôi là một người có tính cách năng động, cầu tiến, hay tỉ mỉ và luôn tìm kiếm cơ hội để học hỏi và phát
+                triển.</div>
+
+            <div class="section-title">THÔNG TIN CÁ NHÂN</div>
+            <div class="info-row">Ngày sinh: 30/08/2007</div>
+            <div class="info-row">Quốc tịch: Việt Nam</div>
+            <div class="info-row">Tình trạng: Độc thân</div>
+
+            <div class="section-title">KĨ NĂNG</div>
+            <div class="list">
+                <div style="margin-bottom:8px">HTML<div class="skill-bar">
+                        <div class="skill-fill" style="width:90%"></div>
+                    </div>
+                </div>
+                <div style="margin-bottom:8px">Photoshop<div class="skill-bar">
+                        <div class="skill-fill" style="width:70%"></div>
+                    </div>
+                </div>
+                <div style="margin-bottom:8px">CSS<div class="skill-bar">
+                        <div class="skill-fill" style="width:80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">GIẤY PHÉP LÁI XE</div>
+            <div class="info-row">Hạng: A1</div>
+
+            <div class="section-title">SỞ THÍCH</div>
+            <div class="muted">Điền kinh, Cờ tướng.</div>
+        </aside>
+
+        <main class="right">
+            <div class="heading-row">
+                <div>
+                    <h2 style="margin:0">ĐINH CÔNG TRIỂN</h2>
+
+                    <p>SINH VIÊN KHOA CÔNG NGHỆ THÔNG TIN </p><br>
+
+                </div>
+                <div class="contact">
+                    <div class="item">📍 76/2, Ấp Vĩnh Bình, Xã Vĩnh Công, Tỉnh Tây Ninh</div>
+                    <div class="item">☎ 0703852743</div>
+                    <div class="item">✉ dinhcongtrien3008@gmail.com</div>
+                </div>
+            </div>
+
+
+
+            <p> </p>
+
+
+
+            <section style="margin-top:20px">
+                <h3 class="section">Giáo dục</h3>
+                <div class="timeline">
+                    <div class="job">
+                        <div class="meta">Tiểu Học Vĩnh Công <span class="year">— 2013-2018</span></div>
+                        <p>Vị trí: Lớp phó học tập.</p>
+                    </div>
+
+                    <div class="job">
+                        <div class="meta">Trung Học Cơ Sở Vĩnh Công <span class="year">— 2018-2022</span></div>
+                        <p>Vị trí: Lớp phó học tập, Tổ trưởng, Lớp phó trật tự.</p>
+                    </div>
+
+                    <div class="job">
+                        <div class="meta"> Trung Học Phổ Thông Tân An <span class="year">— 2022-2025</span></div>
+                        <p>Vị trí: Lớp phó học tập, Bí thư chi đoàn, Tổ trưởng.</p>
+                    </div>
+                    <div class="job">
+                        <div class="meta"> Đại Học Sư Phạm Thành Phố Hồ Chí Minh <span class="year">— 2025-2029</span>
+                        </div>
+                        <p>Vị trí: Sinh viên.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section style="margin-top:22px">
+                <h3 class="section">THÀNH TÍCH ĐẠT ĐƯỢC</h3>
+                <div class="edu-item">
+                    <div class="meta">Trung học cơ sở Vĩnh Công<span class="year">— 2020</span></div>
+                    <p class="muted">Giải nhì học sinh giỏi văn hóa môn Toán cấp Tỉnh<br>
+                        Giải ba học sinh giỏi văn hóa môn Vật Lý cấp Huyện </p>
+                </div>
+                <div class="edu-item">
+                    <div class="meta"> Trung Học Phổ Thông Tân An <span class="year">— 2023</span></div>
+                    <p class="muted"> Giải ba môn Điền kinh (nội dung chạy 800m)<br>
+                        Giải nhì môn Điền kinh (nội dung chạy tiếp sức 400m)
+
+                    </p>
+                </div>
+            </section>
+
+            <section style="margin-top:22px">
+                <h3 class="section">KỸ NĂNG</h3>
+                <div class="skills-grid">
+                    <div>
+                        <div class="skill-name">Kỹ năng quản lí thời gian</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width:92%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skill-name">Kỹ năng giao tiếp tốt</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width:78%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skill-name">Kỹ năng giải quyết vấn đề </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width:65%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skill-name">Kỹ năng làm việc nhóm và tự học</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width:55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+</body>
+
+</html>
