@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #4cae4c;
+        }
+
+        .menu {
+            width: 1200px;
+            height: 50px;
+            margin: auto;
+            background-color: #CCC;
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu ul li {
+            float: left
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            padding: 0 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #832a2a;
+            font-size: 14px;
+            line-height: 40px;
+            display: block;
+        }
+
+        .menu ul li a:hover {
+            background-color: #333;
+            color: #FFF;
+            line-height: 48px;
+            border-bottom: 2px solid #F00;
+            position: sticky;
+        }
+
+        .box1 {
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+        }
+
+        .box2 {
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            top: 0px;
+            right: 0;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<div class="menu">
+    <ul>
+        <li><a href="/a.trang chu.html">Trang chủ</a></li>
+        <li><a href="/a.kehoachht.html">Kế hoạch học tập</a></li>
+        <li><a href="/a.sothich.html">Sở Thích</a></li>
+        <li><a href="/a.tranglienhe.html">Liên hệ</a></li>
+    </ul>
+</div>
+
+<body>
+
+    <div class="container">
+        <h1>Liên hệ với Công Triển 📧</h1>
+
+        <p>
+            Tôi luôn sẵn lòng lắng nghe ý kiến, thắc mắc hoặc yêu cầu hợp tác từ bạn. Vui lòng điền vào biểu mẫu dưới
+            đây, hoặc sử dụng thông tin liên hệ trực tiếp của tôi.
+        </p>
+
+        <form action="#" method="POST" class="contact-form">
+            <div>
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
+            </div>
+
+            <div>
+                <label for="subject">Chủ đề:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Vấn đề bạn muốn liên hệ">
+            </div>
+
+            <div>
+                <label for="message">Nội dung:</label>
+                <textarea id="message" name="message" required placeholder="Nội dung chi tiết..."></textarea>
+            </div>
+
+            <button type="submit">Gửi tin nhắn</button>
+        </form>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Thông tin Liên hệ Khác</h2>
+        <p>
+            Địa chỉ: 76/2, Ấp Vĩnh Bình, Xã Vĩnh Công, Tỉnh Tây Ninh <br>
+            Điện thoại: 0703852743 <br>
+            Email: <a href="mailto:dinhcongtrien3008@gmail.com">dinhcongtrien3008@gmail.com</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
