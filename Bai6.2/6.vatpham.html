@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Vật Phẩm Halloween 👻</title>
+    <style>
+        /* Thiết lập chung */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            /* Nền tối đặc trưng Halloween */
+            color: #f0f0f0;
+            /* Chữ sáng */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Tiêu đề */
+        header {
+            background-color: #ff6600;
+            /* Màu cam Halloween */
+            color: #333333;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #8b0000;
+            /* Viền đỏ đậm */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        /* Nội dung chính */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #ff6600;
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* Danh sách sản phẩm */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #333333;
+            border: 1px solid #444;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff6600;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            /* Dùng hình ảnh placeholder để test */
+            background-color: #555;
+        }
+
+        .product-card h3 {
+            color: #ff9900;
+            margin-top: 5px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #00ff00;
+            /* Giá màu xanh lá nổi bật */
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #8b0000;
+            /* Màu đỏ máu */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #000000;
+            margin-top: 30px;
+            color: #999999;
+            border-top: 3px solid #ff6600;
+        }
+
+        /* Danh mục */
+        #categories ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #categories a {
+            text-decoration: none;
+            color: #cccccc;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #ff6600;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #categories a:hover {
+            background-color: #ff6600;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🛒 Cửa Hàng Vật Phẩm Halloween 🌙</h1>
+        <p>Tất cả những gì bạn cần cho một mùa Halloween rùng rợn và vui nhộn!</p>
+    </header>
+
+    <main>
+        <section id="featured-items">
+            <h2>🔥 Sản Phẩm Nổi Bật</h2>
+            <div class="product-list">
+                <article class="product-card">
+                    <img src="placeholder-bi-nghe.jpg" alt="Bí Ngô Khắc">
+                    <h3>Bí Ngô Khắc Mặt Quỷ 🎃</h3>
+                    <p class="price">Giá: 150.000₫</p>
+                    <p>Bí ngô Jack-o'-lantern truyền thống, hoàn hảo để trang trí hiên nhà.</p>
+                    <button>Thêm vào Giỏ</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="placeholder-trang-phuc.jpg" alt="Trang Phục Ma Cà Rồng">
+                    <h3>Trang Phục Ma Cà Rồng 🦇</h3>
+                    <p class="price">Giá: 450.000₫</p>
+                    <p>Bộ trang phục quý tộc bóng đêm, kèm áo choàng và nanh giả.</p>
+                    <button>Thêm vào Giỏ</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="placeholder-mang-nhen.jpg" alt="Mạng Nhện Giả">
+                    <h3>Mạng Nhện & Nhện Giả 🕸️</h3>
+                    <p class="price">Giá: 80.000₫</p>
+                    <p>Mạng nhện co giãn siêu thực để tạo không khí rùng rợn cho mọi góc phòng.</p>
+                    <button>Thêm vào Giỏ</button>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="categories">
+            <h2>Danh Mục Khác</h2>
+            <ul>
+                <li><a href="#">Trang Phục 👻</a></li>
+                <li><a href="#">Đồ Trang Trí 🕯️</a></li>
+                <li><a href="#">Kẹo & Bánh 🍬</a></li>
+                <li><a href="#">Mặt Nạ & Phụ Kiện 🎭</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cửa Hàng Halloween. Chúc bạn một mùa lễ hội ma quái!</p>
+    </footer>
+</body>
+
+</html>
