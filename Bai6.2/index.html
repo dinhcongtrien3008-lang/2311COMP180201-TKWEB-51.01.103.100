@@ -4,512 +4,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Halloween Ma Quái</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
+    <title>Ngôi Nhà Ma Ám - Halloween 👻</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Butcherman&display=swap');
-
-        :root {
-            --first-color: hsl(22, 72%, 50%);
-
-            --first-color-alt: hsl(22, 72%, 46%);
-            --title-color: #ff9900;
-
-            --white-color: #fff;
-
-            --body-font: 'Butcherman', cursive;
-            --second-font: 'Creepster', cursive;
-            --biggest-font-size: 2.5rem;
-            --header-height: 3.5rem;
-            --mb-1: .5rem;
-            --mb-2: 1rem;
-            --mb-3: 1.5rem;
-        }
-
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-
         body {
-            margin: 0;
-            height: 100vh;
-            background-image: url("https://th.bing.com/th/id/OIP.piy_f5Uy-gslINtdIdrdqgHaEK?w=325&h=183&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            text-shadow: 2px 2px 8px black;
-        }
+            background-color: #0a0a0a;
 
-        html {
-            scroll-behavior: smooth;
-        }
+            color: #f7a627;
 
-        body {
-            margin: var(--header-height) 0 0 0;
-            background-color: var(--body-color);
-            font-family: 'Times New Roman', Times, serif;
-            color: var(--text-color);
-            transition: .4s;
-        }
+            font-family: sans-serif;
+            background-image: url('https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/10/29/762856/Y-Nghia-Le-Hoi-Hallo.jpg');
 
-        ul {
-            list-style: none;
         }
 
         a {
+            color: #9933cc;
+
             text-decoration: none;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+        .hero {
+            background-image: url('halloween-background.jpg');
 
-        .container {
-            max-width: 1024px;
-            margin-inline: 1.5rem;
-
-        }
-
-        .grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .section {
-            padding: 4.5rem 0 2rem;
-        }
-
-        .section__title {
-            font-family: var(--second-font);
-            font-size: var(--biggest-font-size);
+            background-size: cover;
             text-align: center;
-            color: var(--title-color);
-            margin-bottom: var(--mb-3);
+            padding: 150px 20px;
+            height: 400px;
 
-            text-shadow: 0 0 5px var(--title-color), 0 0 10px var(--first-color-alt);
+            h1,
+            h2 {
+                font-family: 'Creepster', cursive;
+                font-size: 3em;
+                text-shadow: 2px 2px 5px #000000;
+
+            }
         }
 
-        .button {
-            display: inline-flex;
-            align-items: center;
-            background-color: var(--first-color);
-            color: var(--white-color);
-            padding: 1rem 1.5rem;
-            border-radius: 4rem;
-            font-weight: 600;
-            transition: .3s;
+        .btn-spooky {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6600;
+
+            border: 3px solid #f7a627;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
-        .button:hover {
-            background-color: var(--first-color-alt);
-            box-shadow: 0 4px 8px rgba(255, 69, 0, 0.5);
+        .btn-spooky:hover {
+            background-color: #cc5200;
+            box-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600;
+
         }
 
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Metal+Mania&display=swap');
 
-        .header {
-            width: 100%;
-            background-color: var(--body-color);
-            position: fixed;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #050505;
+            color: #f7a627;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+
+        }
+
+        a {
+            color: #9933cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Creepster', cursive;
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 3em;
+            text-shadow: 3px 3px 5px #000000;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 50px;
+            position: sticky;
             top: 0;
-            left: 0;
-            z-index: 100;
-
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            border-bottom: 2px solid #ff6600;
         }
 
-        .nav {
-            height: var(--header-height);
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .nav__logo {
-            display: inline-flex;
-            align-items: center;
-            column-gap: 0.5rem;
-            color: var(--title-color);
-            font-size: 1.25rem;
-            font-family: var(--second-font);
-            font-weight: 600;
+        nav h1 a {
+            font-family: 'Nosifer', cursive;
+            font-size: 2em;
+            color: #ff6600;
+            text-shadow: 1px 1px 2px #9933cc;
         }
 
-        .nav__logo img {
-            width: 30px;
-        }
-
-        .nav__buttons {
+        nav ul {
+            list-style: none;
             display: flex;
-            align-items: center;
-            column-gap: 1rem;
         }
 
-
-        .change-theme,
-        .nav__toggle {
-            font-size: 1.5rem;
-            color: var(--title-color);
-            cursor: pointer;
+        nav ul li {
+            margin-left: 30px;
         }
 
-
-        @media screen and (max-width: 767px) {
-            .nav__menu {
-                position: fixed;
-                background-color: var(--body-color);
-                width: 80%;
-                height: 100%;
-                top: 0;
-                right: -100%;
-
-                box-shadow: -1px 0 10px rgba(0, 0, 0, 0.5);
-                padding: 3rem 1rem 0;
-                transition: .4s;
-            }
+        nav ul li a {
+            color: #f7a627;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
-        .nav__list {
+        nav ul li a:hover {
+            color: #050505;
+            background-color: #ff6600;
+        }
+
+        .hero {
+
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.imgur.com/your-spooky-image.jpg') no-repeat center center/cover;
+            height: 600px;
             display: flex;
             flex-direction: column;
-            row-gap: 2.5rem;
-        }
-
-        .nav__link {
-            color: var(--text-color);
-            font-weight: 500;
-            transition: .3s;
-        }
-
-        .nav__link:hover {
-            color: var(--first-color);
-        }
-
-
-        .nav__close {
-            position: absolute;
-            top: 1rem;
-            right: 1.5rem;
-            font-size: 2rem;
-            color: var(--first-color);
-            cursor: pointer;
-        }
-
-
-        .show-menu {
-            right: 0;
-        }
-
-
-        .home__container {
-            padding-top: 2rem;
-            row-gap: 2rem;
-        }
-
-        .home__data {
+            justify-content: center;
+            align-items: center;
             text-align: center;
-        }
-
-        .home__title {
-            position: relative;
-            margin-bottom: var(--mb-2);
-            font-size: 3rem;
+            color: white;
 
         }
 
-        .home__title img {
-            width: 40px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: rotate(15deg);
+        .hero h2 {
+            font-size: 4.5em;
+            color: #ff6600;
+            text-shadow: 0 0 10px #ff6600, 0 0 20px #9933cc;
+            animation: pulse 2s infinite alternate;
         }
 
-        .home__description {
-            margin-bottom: var(--mb-3);
-        }
-
-        .home__images {
-            position: relative;
-            justify-self: center;
-        }
-
-        .home__img {
-            width: 250px;
-            filter: drop-shadow(0 0 10px var(--first-color));
-
-            transition: .4s;
-
-            animation: float-bob 4s ease-in-out infinite;
-        }
-
-
-        .home__shadow {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: var(--first-color);
-            bottom: 0;
-            filter: blur(40px);
-            opacity: 0.2;
-        }
-
-
-        .home__bat {
-            position: absolute;
-            width: 40px;
-            animation: fly 10s linear infinite;
-        }
-
-        .home__bat-1 {
-            top: 10%;
-            left: 5%;
-            width: 100px;
-            filter: drop-shadow(0 0 10px var(--first-color));
-            transition: .4s;
-        }
-
-        .home__bat-2 {
-            bottom: 15%;
-            right: 10%;
-            transform: scaleX(-1);
-
-            animation-delay: 2s;
-            width: 100px;
-            filter: drop-shadow(0 0 10px var(--first-color));
-
-            transition: .4s;
-
-
-        }
-
-
-        @keyframes float-bob {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-
-        @keyframes fly {
+        @keyframes pulse {
             0% {
-                transform: translateX(0) translateY(0);
-            }
-
-            50% {
-                transform: translateX(50px) translateY(-20px);
+                transform: scale(1);
+                opacity: 1;
             }
 
             100% {
-                transform: translateX(0) translateY(0);
+                transform: scale(1.03);
+                opacity: 0.95;
             }
         }
 
-        @media screen and (min-width: 768px) {
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            color: #ccc;
+            font-family: 'Metal Mania', cursive;
+        }
 
-            .nav__toggle,
-            .nav__close {
-                display: none;
-
-            }
-
-            .nav__menu {
-                width: initial;
-                background-color: initial;
-                position: initial;
-                padding: initial;
-                box-shadow: none;
-            }
-
-            .nav__list {
-                flex-direction: row;
-                column-gap: 2.5rem;
-            }
-
-            .home__container {
-                grid-template-columns: repeat(2, 1fr);
-
-                align-items: center;
-                padding-top: 5rem;
-            }
-
-            .home__data {
-                text-align: left;
-            }
-
-            .home__title img {
-                width: 50px;
-            }
+        .btn-spooky {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff6600;
+            color: #050505;
+            border: 3px solid #ff6600;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.4);
         }
 
 
-        @media screen and (min-width: 1024px) {
-            .container {
-                margin-inline: auto;
 
-            }
-
-            .home__img {
-                width: 350px;
-            }
+        .btn-spooky:hover {
+            background-color: #cc5200;
+            color: white;
+            border-color: #9933cc;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 102, 0, 0.6);
         }
 
-
-        .about__container {
-            padding-top: 1.5rem;
-            justify-items: center;
-        }
-
-        .about__title {
-            margin-bottom: var(--mb-2);
+        .events {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
             text-align: center;
         }
 
-        .about__description {
+        .events h3 {
+            font-size: 2.5em;
+            color: #9933cc;
+            border-bottom: 3px dashed #ff6600;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .event-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .event-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #9933cc;
+            box-shadow: 0 0 15px rgba(153, 51, 204, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #ff6600;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #9933cc;
             text-align: center;
-            margin-bottom: var(--mb-3);
+            padding: 20px;
+            border-top: 2px solid #9933cc;
+            font-size: 0.9em;
         }
 
-        .about__img {
-            justify-self: center;
-        }
-
-        .about__img img {
-            width: 250px;
-            filter: drop-shadow(0 0 10px rgba(78, 3, 80, 0.7));
-            border-radius: 1rem;
-            transition: .4s;
-        }
-
-        .footer {
-            padding-bottom: 2rem;
-            margin-top: 4rem;
-            text-align: center;
-        }
-
-        .footer__copy {
-            font-size: 0.8rem;
-            color: var(--text-color);
-        }
-
-
-        @media screen and (min-width: 768px) {
-            .about__container {
-                grid-template-columns: repeat(2, 1fr);
-                align-items: center;
-                column-gap: 3rem;
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 20px;
             }
 
-            .about__title,
-            .about__description {
-                text-align: left;
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .hero h2 {
+                font-size: 3em;
             }
         }
     </style>
 </head>
 
 <body>
-    <img src="/5101103100/Ảnh/Witch.ico" alt="Star Background" class="shape__bg">
-
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img url=('https://png.pngtree.com/png-clipart/20210718/original/pngtree-cute-halloween-spooky-pumpkin-bat-png-image_6533845.jpg')>
-                Halloween
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="6.thiepmoi.html" class="nav__link active-link">Thiệp mời</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="6.gioithieunhom.html" class="nav__link active-link">Giới thiệu nhóm</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="6.lichsu.html" class="nav__link active-link">Lịch sử</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="6.dangki.html" class="nav__link">Đăng kí</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="6.vatpham.html" class="nav__link">Vật phẩm</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="6.lienhe.html" class="nav__link">Liên hệ</a>
-                    </li>
-                </ul>
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
-
-            <div class="nav__buttons">
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-4-line"></i>
-                </div>
-            </div>
+    <header>
+        <nav>
+            <h1><a href="#">TRICK OR TREAT</a></h1>
+            <ul>
+                <li><a href="./index.html">Trang Chủ</a></li>
+                <li><a href="6.vatpham.html">Vật phẩm</a></li>
+                <li><a href="6.thiepmoi.html">Thiệp mời</a></li>
+                <li><a href="6.dangki.html">Đăng ký</a></li>
+                <li><a href="6.lichsu.html">Lịch sử</a></li>
+                <li><a href="6.lienhe.html"></a>Liên hệ</li>
+                <li><a href="6.gioithieunhom.html">Giới thiệu nhóm</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="main">
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <h1 class="home__title">
-                        Trick or Treat!
-                        <img url=('https://png.pngtree.com/png-clipart/20210718/original/pngtree-cute-halloween-spooky-pumpkin-bat-png-image_6533845.jpg')>
-                    </h1>
-                    <p class="home__description">
-                        Đêm nay, mọi thứ đều có thể xảy ra. Hãy sẵn sàng cho những trò đùa hay một bữa tiệc kẹo ngọt ma
-                        quái!
-                    </p>
-                    <a href="#about" class="button">
-                        Khám phá <i class="ri-arrow-right-line"></i>
-                    </a>
-                </div>
-
-                <div class="home__images">
-                    <img url=('https://png.pngtree.com/png-clipart/20210718/original/pngtree-cute-halloween-spooky-pumpkin-bat-png-image_6533845.jpg') alt="home image" class="home__img">
-                    <div class="home__shadow"></div>
-                </div>
-            </div>
-
-            <img url=('https://png.pngtree.com/png-clipart/20210718/original/pngtree-cute-halloween-spooky-pumpkin-bat-png-image_6533845.jpg') alt="bat image"
-                class="home__bat home__bat-1">
-           <img url=('https://png.pngtree.com/png-clipart/20210718/original/pngtree-cute-halloween-spooky-pumpkin-bat-png-image_6533845.jpg') alt="home image" class="home__bat home__bat-2">
+    <main>
+        <section id="trangchu" class="hero">
+            <h2>Đêm Halloween Huyền Bí</h2>
+            <p>Sẵn sàng cho những điều bất ngờ và rùng rợn nhất!</p>
+            <a href="#sukien" class="btn-spooky">Khám Phá Ngay</a>
         </section>
 
-        <section class="about section" id="about">
-            <div class="about__container container grid">
+        <section id="sukien" class="events">
+            <h3>Sự Kiện Ma Quái</h3>
+            <div class="event-list">
+                <div class="event-item">
+                    <h4>Lễ Hội Hóa Trang Ánh Trăng</h4>
+                    <p>Thời gian: 31/10 | Địa điểm: Công viên Cấm Địa</p>
+                    <p>Cuộc thi trang phục kinh dị nhất. Giải thưởng là một đêm trong Lâu Đài Ma!</p>
+                    <a href="#" class="btn-spooky">Đăng Ký</a>
+                </div>
+                <div class="event-item">
+                    <h4>Phòng Thoát Hiểm Bí Ẩn</h4>
+                    <p>Thời gian: Mọi đêm | Địa điểm: Hầm mộ cổ</p>
+                    <p>Hãy thử thách lòng can đảm của bạn! Chỉ 60 phút để thoát khỏi lời nguyền.</p>
+                    <a href="#" class="btn-spooky">Đặt Chỗ</a>
+                </div>
+                <div class="event-item">
+                    <h4>Đêm Điện Ảnh Kinh Hoàng</h4>
+                    <p>Thời gian: 29/10 | Địa điểm: Rạp chiếu bóng Ma Quái</p>
+                    <p>Loạt phim kinh điển và những trailer rùng rợn chưa từng được công bố.</p>
+                    <a href="#" class="btn-spooky">Mua Vé</a>
+                </div>
             </div>
         </section>
-
-        <footer class="footer">
-            <div class="footer__container container grid">
-                <p class="footer__copy">
-                    &#169; 2025 Lễ Hội Ma Quái. All Rights Reserved.
-                </p>
-            </div>
-        </footer>
     </main>
-
     <script>
         const navMenu = document.getElementById('nav-menu'),
             navToggle = document.getElementById('nav-toggle'),
@@ -519,8 +329,6 @@
                 navMenu.classList.add('show-menu');
             });
         }
-
-
         if (navClose) {
             navClose.addEventListener('click', () => {
                 navMenu.classList.remove('show-menu');
@@ -531,20 +339,14 @@
 
         const linkAction = () => {
             const navMenu = document.getElementById('nav-menu');
-
             navMenu.classList.remove('show-menu');
         }
         navLink.forEach(n => n.addEventListener('click', linkAction));
-
-
-
         const themeButton = document.getElementById('theme-button');
         const darkTheme = 'dark-theme';
         const iconTheme = 'ri-sun-line';
         const selectedTheme = localStorage.getItem('selected-theme');
         const selectedIcon = localStorage.getItem('selected-icon');
-
-
         const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
         const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line';
         if (selectedTheme) {
@@ -558,6 +360,10 @@
             localStorage.setItem('selected-icon', getCurrentIcon());
         });
     </script>
+
+    <footer>
+        <p>&copy; 2025 Halloween Spooky Website. Chúc Mừng Lễ Hội Ma!</p>
+    </footer>
 </body>
 
 </html>
