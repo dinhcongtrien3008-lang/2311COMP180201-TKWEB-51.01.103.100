@@ -36,7 +36,7 @@ Mỗi bài tập thể hiện kỹ năng và kiến thức qua từng chương.
   - Trang danh sách sản phẩm  
   - Trang chi tiết sản phẩm  
 - **Công nghệ:** HTML5, Bootstrap 5, Responsive design.  
-- 🔗 [Xem demo](https://dinhcongtrien3008-lang.github.io/2311COMP180201-TKWEB-51.01.103.100/Bai5Bai5/)  
+- 🔗 [Xem demo](https://dinhcongtrien3008-lang.github.io/2311COMP180201-TKWEB-51.01.103.100/Bai5/)  
 
 ---
 
