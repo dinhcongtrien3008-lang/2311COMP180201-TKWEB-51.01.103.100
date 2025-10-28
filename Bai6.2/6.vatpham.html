@@ -16,11 +16,51 @@
             margin: 0;
             padding: 0;
         }
+ header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 50px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #ff6600;
+        }
 
-        /* Tiêu đề */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 a {
+            font-family: 'Nosifer', cursive;
+            font-size: 2em;
+            color: #ff6600;
+            text-shadow: 1px 1px 2px #9933cc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #f7a627;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            color: #050505;
+            background-color: #ff6600;
+        }
+       
         header {
             background-color: #ff6600;
-            /* Màu cam Halloween */
             color: #333333;
             padding: 20px 0;
             text-align: center;
@@ -146,6 +186,20 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+           
+            <ul>
+                <li><a href="./index.html">Trang Chủ</a></li>
+                <li><a href="6.vatpham.html">Vật phẩm</a></li>
+                <li><a href="6.thiepmoi.html">Thiệp mời</a></li>
+                <li><a href="6.dangki.html">Đăng ký</a></li>
+                <li><a href="6.lichsu.html">Lịch sử</a></li>
+                <li><a href="6.lienhe.html">Liên hệ</a></li>
+                <li><a href="6.gioithieunhom.html">Giới thiệu nhóm</a></li>
+            </ul>
+        </nav>
+    </header>
     <header>
         <h1>🛒 Cửa Hàng Vật Phẩm Halloween 🌙</h1>
         <p>Tất cả những gì bạn cần cho một mùa Halloween rùng rợn và vui nhộn!</p>
